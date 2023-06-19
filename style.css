@@ -40,10 +40,12 @@ body{
     background-color: rgb(250,212,218);
 }
 #food-container{
-    background-color: whitesmoke;
+    background-image: linear-gradient(rgb(119, 208, 223),rgb(211, 207, 204),rgb(178, 123, 180));
     overflow: scroll;
     overflow-x: hidden;
     box-sizing: content-box;
+    margin-right: 5px;
+    border-radius: 10px;
 }
 #header{
     display: flex;
@@ -89,9 +91,7 @@ body{
     color: white;
     background-color: crimson;
 }
-.food-items{
-/*display: none;*/
-}
+
 #biryani,#chicken,#paneer,#vegetable,#chinese,#south-indian{
     margin-top: 40px;
 
@@ -105,7 +105,7 @@ body{
 #category-name,.item-menu{
     margin: 10px;
     font-size: 35px;
-    color: coral;
+    color: black;
 }
 #item-card{
     width: 190px;
@@ -119,6 +119,12 @@ body{
     cursor: pointer;
     transition: 0.5s all ease-in-out;
 }
+#item-card:hover{
+    transform: scale(1.1);
+}
+/*#item-card  :hover{
+        transform: scale(1.1);
+}*/
 #item-card img:hover{
     transform: scale(1.2);
 }
@@ -138,12 +144,15 @@ body{
     padding: 6px;
     background-color: white;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 50%; 
+    transition: 1s all ease-in-out;
 }
-.toggle-heart{
-    background-color: orangered;
-    color: white;
+.fa-heart-o :hover{
+    transform: scale(1.2);
+    
 }
+
+
 #item-card img{
     width: 100px;
     height: 100px;
@@ -221,12 +230,8 @@ body{
     text-transform: capitalize;
     color: rgb(94,43,43);
 }
-#category-list{
-    /*display: none;*/
-}
-.cart-toggle{
-    display:none ;
-}
+
+
 #cart-page{
     background-color: white;
     margin: 40px 10px;
@@ -309,4 +314,21 @@ body{
 #delivery{
     font-size: 20px;
     color: limegreen;
+}
+
+.toggle-heart{
+    background-color: orangered;
+    color: white;
+}
+/*.add-to-cart{
+    display: none;
+}
+#table-body{
+    display: none;
+}*/
+#cart-page{
+    display: none;
+}
+#checkout{
+    display: none;
 }
