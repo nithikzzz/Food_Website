@@ -17,15 +17,17 @@ body{
 }
 /*menu design*/
 #menu{
-    background-color: whitesmoke;
+    background-image: linear-gradient(white,white,rgb(179, 245, 229));
 }
 .brand-logo{
     padding: 0 30px;
 }
 .brand-logo img{
     width: 150px;
-    height: 150px;
+    height: 130px;
     margin-top: 20px;
+    border-radius: 70px;
+    object-fit: cover;
 }
 .menu-item a{
     display: block;
@@ -40,7 +42,7 @@ body{
     background-color: rgb(250,212,218);
 }
 #food-container{
-    background-image: linear-gradient(rgb(119, 208, 223),rgb(211, 207, 204),rgb(178, 123, 180));
+    background-image: linear-gradient(rgb(153, 215, 226),rgb(211, 207, 204),rgb(218, 166, 219));
     overflow: scroll;
     overflow-x: hidden;
     box-sizing: content-box;
@@ -55,7 +57,7 @@ body{
     padding-bottom: 10px;
     position: sticky;
     top: 0;
-    background: whitesmoke;
+    background-image: linear-gradient(white,whitesmoke,rgb(179, 245, 229));
     z-index: 1;
 }
 ::-webkit-scrollbar{
@@ -114,19 +116,19 @@ body{
     color: coral;
     margin: 10px;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 37px;
     background: rgb(253,221,226);
     cursor: pointer;
     transition: 0.5s all ease-in-out;
 }
 #item-card:hover{
-    transform: scale(1.1);
+    transform: scale(1);
 }
 /*#item-card  :hover{
         transform: scale(1.1);
 }*/
 #item-card img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 #card-top{
     display: flex;
@@ -176,7 +178,7 @@ body{
 }
 
 #cart{
-    background: whitesmoke;
+    background-image: linear-gradient(white,whitesmoke,rgb(179, 245, 229));
     padding-right: 30px;
     overflow-y: scroll;
 }
@@ -185,14 +187,14 @@ body{
     padding-bottom: 10px;
     position: sticky;
     top: 0;
-    background: whitesmoke;
+    background-image: linear-gradient(white,whitesmoke,rgb(179, 245, 229));
 }
 .item-menu{
     margin: 0;
-    font-size: 30px;
+    font-size: 23px;
     margin-top: 40px;
     color: indianred;
-    background: whitesmoke;
+    background-image: linear-gradient(white,whitesmoke,rgb(179, 245, 229));
 }
 .border{
     width: 80px;
